@@ -1,10 +1,10 @@
 module.exports = {
-	testEnvironment: 'jsdom',
-	setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
+	testEnvironment: 'jsdom', // Environnement pour tester les composants React
+	setupFilesAfterEnv: ['<rootDir>/setupTests.js'], // Fichier de configuration supplémentaire
 	transform: {
-		'^.+\\.jsx?$': 'bable-jest',
+	  '^.+\\.jsx?$': 'babel-jest', // Utilise Babel pour transformer les fichiers JS/JSX
 	},
 	moduleNameMapper: {
-		'\\.(css|scss)$': identity-obj-proxy',
+	  '\\.(css|scss)$': 'identity-obj-proxy', // Mapper pour les fichiers CSS/SCSS
 	},
-};
+  };

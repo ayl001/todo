@@ -1,6 +1,3 @@
 module.exports = {
-	presets: [
-		'@bable/preset-env',
-		['@babel/preset-react', {runtime: 'automatic'}],
-	],
-};
+	presets: ['@babel/preset-env', '@babel/preset-react'], // Préréglages pour Babel
+  };
